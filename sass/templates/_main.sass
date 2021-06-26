@@ -1,0 +1,146 @@
+.main
+    padding-top: 48px
+    padding-right: 40px
+    background-image: url(../img/main/bg.png)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    padding-bottom: 136px
+    position: relative
+    overflow: hidden
+    margin-bottom: 170px
+    &__rect
+        position: absolute
+        right: 0
+        top: 0
+        height: 80%
+        width: 40px
+        background-color: #12A89D
+    &__img
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+        z-index: 1
+    &__bgBottom
+        position: absolute
+        bottom: 0
+        left: 0
+        z-index: 2
+        display: flex
+        align-items: flex-end
+    &__box
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        padding-top: 30px
+        position: relative
+        z-index: 2
+        &__img
+            img
+                &:last-of-type
+                    display: none
+    &__title
+        font-family: 'MuseoCyrl-900'
+        font-style: normal
+        font-size: 64px
+        line-height: 110%
+        color: #3D3D3D
+        margin-bottom: 15px
+    &__subtitle
+        font-family: 'MuseoCyrl-900'
+        font-style: normal
+        font-size: 55px
+        line-height: 110%
+        color: #FFFFFF
+        background-color: #12A89D
+        padding-right: 40px
+        padding-left: 175px
+        padding-top: 8px
+        padding-bottom: 8px
+        transform: translateX(-175px)
+        margin-bottom: 25px
+    &__text
+        display: flex
+        align-items: center
+        font-family: 'MuseoCyrl-700'
+        font-style: normal
+        font-size: 34px
+        line-height: 130%
+        color: #12A89D
+        margin-bottom: 10px
+        &:last-of-type
+            margin-bottom: 40px
+        img
+            margin-right: 15px
+    &__input
+        box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.17)
+        border-radius: 5px
+        border: none
+        font-family: 'ProximaNova'
+        font-style: normal
+        font-size: 26px
+        line-height: 130%
+        color: #3D3D3D
+        padding: 10px 10px 10px 50px
+        max-width: 105px
+        margin-right: 15px
+        &--bottom
+            border: 1px solid #12A89D
+            padding: 20px 30px
+            font-family: 'Montserrat'
+            font-style: normal
+            font-size: 18px
+            line-height: 22px
+            color: #3D3D3D
+            width: 100%
+            margin-bottom: 15px
+    &__input-group
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 22px
+        &--last
+            margin-bottom: 40px
+        &__wrap
+            width: 150px
+            display: flex
+            align-items: center
+            span
+                font-family: 'ProximaNova-Bold'
+                font-style: normal
+                font-size: 24px
+                line-height: 130%
+                color: #3D3D3D
+    &__label
+        font-family: 'ProximaNova'
+        font-style: normal
+        font-size: 25px
+        line-height: 130%
+        text-decoration-line: underline
+        color: #3D3D3D
+        cursor: pointer
+    &__form
+        padding: 65px 40px
+        background: #FFFFFF
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25)
+        border-radius: 10px
+        width: 555px
+        position: relative
+        &__title
+            font-family: 'MuseoCyrl-700'
+            font-style: normal
+            font-size: 36px
+            line-height: 110%
+            text-decoration-line: underline
+            color: #3D3D3D
+            display: flex
+            align-items: center
+            margin-bottom: 55px
+            img
+                margin-right: 15px
+                &:last-of-type
+                    display: none
+    &__button
+        width: 100%
+        padding: 20px 0

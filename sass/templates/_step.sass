@@ -1,0 +1,125 @@
+.step
+    position: relative
+    height: 100vh
+    max-width: 1820px
+    margin: auto
+    &__row
+        &--button
+            max-width: 500px
+    &__container
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: 100%
+        padding: 100px
+        border: 1px solid #CDCDCD
+        border-radius: 27px
+        width: 1320px
+    &__button
+        width: 220px
+        height: 70px
+        &--last
+            width: 305px
+    &__radio
+        display: flex
+        flex-wrap: wrap
+        max-width: 555px
+        justify-content: space-between
+        label
+            &:nth-child(3)
+                margin-top: 15px
+        &__item
+            font-family: 'ProximaNova'
+            font-style: normal
+            font-size: 24px
+            line-height: 130%
+            color: #3D3D3D
+            width: 270px
+            height: 70px
+            border: 1px solid #12A89D
+            display: flex
+            align-items: center
+            justify-content: center
+    &__title
+        font-family: 'MuseoCyrl-900'
+        font-style: normal
+        font-size: 36px
+        line-height: 120%
+        color: #3D3D3D
+        max-width: 595px
+        margin-bottom: 65px
+        &--last
+            max-width: 630px
+            margin-bottom: 40px
+            span
+                color: #12A89D
+    &__progress
+        display: flex
+        margin-bottom: 65px
+        &__item
+            width: 73px
+            height: 5px
+            background-color: #C4C4C4
+            margin-right: 15px
+            &:last-of-type
+                margin-right: 0
+            &--active
+                background-color: #12A89D
+    &__rect
+        height: 90%
+        position: absolute
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+        background-color: #12A89D
+        width: 37%
+        z-index: 1
+    &__img
+        position: absolute
+        right: 60px
+        top: 50%
+        transform: translateY(-50%)
+        z-index: 3
+        width: 40%
+        &--last
+            transform: none
+            top: auto
+            bottom: 0
+            right: 20%
+        &--gift
+            z-index: 2
+    &__input
+        display: none
+        &:checked + .step__radio__item
+            background-color: #12A89D
+            color: #fff
+        &--gift
+            display: none
+            &:checked + .quiz__gift--last
+                border-color: #12A89D
+                .quiz__gift__text
+                    color: #12A89D
+    &__label
+        &--tel
+            font-family: 'ProximaNova'
+            font-style: normal
+            font-size: 24px
+            line-height: 120%
+            color: #3D3D3D
+            display: block
+            max-width: 385px
+            margin-bottom: 20px
+        &--gift
+            margin-right: 30px
+            &:last-of-type
+                margin-right: 0
+    &__tel
+        font-family: 'ProximaNova'
+        font-style: normal
+        font-size: 18px
+        line-height: 120%
+        color: #B6B6B6
+        width: 360px
+        padding: 20px
+        margin-bottom: 20px
+                

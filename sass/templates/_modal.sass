@@ -1,0 +1,98 @@
+.modal
+    opacity: 0
+    visibility: hidden
+    position: fixed
+    z-index: 199
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(#000, 0.6)
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: 0.3s
+    &--visible
+        opacity: 1
+        visibility: visible
+    &__dialog
+        padding: 12px
+        width: 500px
+        background: #FFFFFF
+        border-radius: 27px
+        position: relative
+        &__container
+            border: 2px solid #12A89D
+            border-radius: 27px
+            width: 100%
+            height: 100%
+            padding: 70px
+            &--success
+                padding-top: 150px
+                padding-bottom: 150px
+    &__close
+        font-family: 'MuseoCyrl-700'
+        position: absolute
+        top: 25px
+        right: 25px
+        font-size: 24px
+        cursor: pointer
+    &__title
+        font-family: 'MuseoCyrl-900'
+        font-style: normal
+        font-size: 25px
+        line-height: 120%
+        text-align: center
+        color: #3D3D3D
+        margin-bottom: 25px
+        &--success
+            max-width: 200px
+            margin: auto
+            margin-bottom: 50px
+            font-size: 30px
+    &__img
+        display: block
+        margin: auto
+    &__input
+        width: 100%
+        font-family: 'ProximaNova'
+        font-style: normal
+        font-size: 18px
+        line-height: 120%
+        color: #B6B6B6
+        padding: 20px
+        margin-bottom: 20px
+    &__label
+        font-family: 'ProximaNova-300'
+        font-style: normal
+        font-size: 14px
+        line-height: 130%
+        color: #3D3D3D
+        margin-bottom: 30px
+        display: block
+        padding-left: 35px
+        max-width: 235px
+        position: relative
+    &__ok
+        width: 22px
+        height: 24px
+        border: 1px solid #3D3D3D
+        position: absolute
+        border-radius: 4px
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: auto
+    &__check
+        display: none
+        &:checked + .modal__ok
+            background-image: url(../img/ok.png)
+            
+    &__button
+        display: block
+        width: 100%
+        padding: 20px 0

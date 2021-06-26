@@ -1,0 +1,108 @@
+.slider
+    margin-bottom: 170px
+    &__button
+        &--mobile
+            width: 100%
+            padding: 18px 0
+    &__window
+        overflow: hidden
+        &--mobile
+            display: none
+            overflow: hidden
+            padding: 10px 0 10px 20px
+    &__field
+        width: 5455px
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        transition: 0.3s
+        &--mobile
+            width: 4480px
+            display: flex
+            align-items: flex-start
+            justify-content: space-between
+            transition: 0.3s
+    &__card
+        width: 345px
+        &--mobile
+            width: 280px
+            height: 590px
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            border-radius: 0px 0px 10px 10px
+            padding-bottom: 20px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            &__wrap
+                padding: 0 15px
+            img
+                margin-bottom: 20px
+            &__title
+                font-family: 'MuseoCyrl-900'
+                font-style: normal
+                font-size: 20px
+                line-height: 120%
+                color: #3D3D3D
+                margin-bottom: 5px
+            &__text
+                font-family: 'ProximaNova'
+                font-style: normal
+                font-size: 16px
+                line-height: 150%
+                color: #3D3D3D
+        &__img
+            margin-bottom: 5px
+        &__text
+            font-family: 'MuseoCyrl-700'
+            font-style: normal
+            font-size: 24px
+            line-height: 130%
+            color: #3D3D3D
+    &__arrow
+        cursor: pointer
+    &__row
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 70px
+        &--title
+            align-items: center
+            margin-bottom: 90px
+            &__wrap
+                display: none
+                img
+                    &:first-of-type
+                        margin-right: 20px
+    &__main
+        filter: drop-shadow(4px 2px 4px rgba(0, 0, 0, 0.25))
+        display: none
+        transition: 0.3s
+        &__button
+            padding: 20px 85px
+        &__title
+            font-family: 'MuseoCyrl-900'
+            font-style: normal
+            font-size: 35px
+            line-height: 120%
+            color: #3D3D3D
+            margin-bottom: 30px
+            max-width: 400px
+        &__text
+            font-family: 'ProximaNova'
+            font-style: normal
+            font-size: 20px
+            line-height: 150%
+            color: #3D3D3D
+            max-width: 460px
+        &__box
+            background-color: #ffffff
+            border-radius: 0 30px 30px 0
+            padding: 70px 70px 70px 55px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: flex-start
+
+.fadeIn
+    display: flex
+    animation-name: fadeIn
+    animation-duration: 0.5s

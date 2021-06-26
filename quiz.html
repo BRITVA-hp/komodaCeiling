@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <main>
+
+        <section class="step">
+
+            <img src="img/step/img.png" alt="ceiling" class="step__img"></img>
+            <div class="step__rect"></div>
+
+            <form action="#" class="step__container">
+                <div class="step__wrap">
+                    <div class="step__progress">
+                        <div class="step__progress__item step__progress__item--active"></div>
+                        <div class="step__progress__item"></div>
+                        <div class="step__progress__item"></div>
+                    </div>
+                    <h2 class="step__title">1) Какой интерьер преобладает в комнате? </h2>
+    
+                    <div class="step__radio">
+                        <label for="1">
+                            <input id="1" class="step__input" name="inerier" type="radio">
+                            <div class="step__radio__item"><span>Классический</span></div>
+                        </label>
+                        <label for="2">
+                            <input id="2" class="step__input" name="inerier" type="radio">
+                            <div class="step__radio__item"><span>Сдержанный</span></div>
+                        </label>
+                        <label for="3">
+                            <input id="3" class="step__input" name="inerier" type="radio">
+                            <div class="step__radio__item"><span>В нежном стиле</span></div>
+                        </label>
+                    </div>
+                </div>
+
+                <button class="button step__button">Далее</button>
+            </form>
+
+        </section>
+        <!-- /.step -->
+
+        <section class="step">
+
+            <img src="img/step/img1.png" alt="ceiling" class="step__img"></img>
+            <div class="step__rect"></div>
+
+            <form action="#" class="step__container">
+                <div class="step__wrap">
+                    <div class="step__progress">
+                        <div class="step__progress__item"></div>
+                        <div class="step__progress__item step__progress__item--active"></div>
+                        <div class="step__progress__item"></div>
+                    </div>
+                    <h2 class="step__title">2) Какие цвета присутствуют в помещении?</h2>
+    
+                    <div class="step__radio">
+                        <label for="4">
+                            <input id="4" class="step__input" name="color" type="radio">
+                            <div class="step__radio__item"><span>Черные и белые</span></div>
+                        </label>
+                        <label for="5">
+                            <input id="5" class="step__input" name="color" type="radio">
+                            <div class="step__radio__item"><span>Яркие или нежные</span></div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="step__row--button row">
+                    <button class="button button-gray step__button">Назад</button>
+                    <button class="button step__button">Далее</button>
+                </div>
+            </form>
+
+        </section>
+        <!-- /.step -->
+
+        <section class="step">
+
+            <img src="img/step/img2.png" alt="ceiling" class="step__img"></img>
+            <div class="step__rect"></div>
+
+            <form action="#" class="step__container">
+                <div class="step__wrap">
+                    <div class="step__progress">
+                        <div class="step__progress__item"></div>
+                        <div class="step__progress__item"></div>
+                        <div class="step__progress__item step__progress__item--active"></div>
+                    </div>
+                    <h2 class="step__title">3) Есть ли дополнительные элементы интерьера в помещении, идущие до потолка?</h2>
+    
+                    <div class="step__radio">
+                        <label for="6">
+                            <input id="6" class="step__input" name="element" type="radio">
+                            <div class="step__radio__item"><span>Высокие статуи</span></div>
+                        </label>
+                        <label for="7">
+                            <input id="7" class="step__input" name="element" type="radio">
+                            <div class="step__radio__item"><span>Высоких предметов нет</span></div>
+                        </label>
+                        <label for="8">
+                            <input id="8" class="step__input" name="element" type="radio">
+                            <div class="step__radio__item"><span>Шкафы “в потолок”</span></div>
+                        </label>
+                    </div>
+                </div>
+
+                <button class="button button-gray step__button">Назад</button>
+            </form>
+
+        </section>
+        <!-- /.step -->
+
+        <section class="step">
+
+            <img src="img/step/man.png" alt="man" class="step__img step__img--last"></img>
+            <img src="img/step/gift.png" alt="gift" class="step__img step__img--gift"></img>
+            <div class="step__rect step__rect--last"></div>
+
+            <form action="#" class="step__container step__container--last">
+                <div class="step__wrap">
+                    <h2 class="step__title step__title--last">Поздравляем, вы прошли тест! <span>Выберите один из трех подарков</span></h2>
+                </div>
+
+                <div class="quiz__row--gift quiz__row--gift--last row">
+                    <label class="step__label--gift" for="9">
+                        <input class="step__input--gift" name="gift" id="9" type="radio">
+                        <div class="quiz__gift quiz__gift--last quiz__gift--1">
+                            <p class="quiz__gift__text">карниз</p>
+                        </div>
+                    </label>
+
+                    <label class="step__label--gift" for="10">
+                        <input class="step__input--gift" name="gift" id="10" type="radio">
+                        <div class="quiz__gift quiz__gift--last quiz__gift--2">
+                            <p class="quiz__gift__text">маскировочная лента</p>
+                        </div>
+                    </label>
+
+                    <label class="step__label--gift" for="11">
+                        <input class="step__input--gift" name="gift" id="11" type="radio">
+                        <div class="quiz__gift quiz__gift--last quiz__gift--3">
+                            <p class="quiz__gift__text">светильник</p>
+                        </div>
+                    </label>
+                </div>
+
+                <label class="step__label--tel" for="stepTel">Забронируйте подарок, оставив свой номер телефона</label>
+                <input class="step__tel" id="stepTel" placeholder="+7 (___) ___ - __ - __" type="tel">
+
+                <button class="button step__button step__button--last">Получить подарок</button>
+            </form>
+
+        </section>
+        <!-- /.step -->
+
+    </main>
+
+    <div class="modal modal--success">
+
+
+        <div class="modal__dialog">
+
+            <div class="modal__close modal__close--success">&#10006;</div>
+
+            <div class="modal__dialog__container modal__dialog__container--success">
+
+                <h3 class="modal__title modal__title--success">Ваша заявка отправлена!</h3>
+
+                <img src="img/success.png" alt="success" class="modal__img">
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
